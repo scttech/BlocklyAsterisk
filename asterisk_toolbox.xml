@@ -1,0 +1,34 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="Context" colour="#5b6da5">
+    <block type="context">
+      <field name="contextName">Context Name</field>
+      <field name="contextDesc">Context Description</field>
+    </block>
+  </category>
+  <category name="Extension" colour="#a5a55b">
+    <block type="extensiontimeout">
+      <field name="extensionDescription">User Timed Out</field>
+    </block>
+    <block type="extensioninvalid">
+      <field name="extensionDescription">User Entered Invalid Option</field>
+    </block>
+  </category>
+  <category name="Audio Playback" colour="#a56d5b">
+    <block type="background"></block>
+    <block type="playback"></block>
+  </category>
+  <category name="Call Management" colour="#5ba5a5"></category>
+  <category name="Control and Flow" colour="#6da55b">
+    <block type="goto">
+      <field name="context"></field>
+      <field name="extension"></field>
+      <field name="priority"></field>
+    </block>
+    <block type="gotoif">
+      <field name="condition"></field>
+      <field name="context"></field>
+      <field name="extension"></field>
+      <field name="priority"></field>
+    </block>
+  </category>
+</xml>

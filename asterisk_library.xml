@@ -1,0 +1,572 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="p-)/EvN3SS/nriWZ`R@7" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">context</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="$S#PFUTwCsf158i$_=mP">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_input" id="SDQq[GWmi),5ej,a)1M8">
+            <field name="TEXT">Context Name</field>
+            <field name="FIELDNAME">contextName</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="JmlP^ml?eZPZu6s/@}mZ">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_input" id="_FJu;3-YyIb4_[xc7t,n">
+                <field name="TEXT">Context Description</field>
+                <field name="FIELDNAME">contextDesc</field>
+              </block>
+            </statement>
+            <next>
+              <block type="input_statement" id="=.y_Q:Ue9F`%6}_I_VK?">
+                <field name="INPUTNAME">commands</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="z%[fp{L|EX6cRSxTOXNE">
+                    <field name="TEXT">Extensions</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="-hbg*RDThdk:`lw9@^^O"></shadow>
+                  <block type="type_other" id="pDdKmfL^=y5:uSs6%g5=">
+                    <field name="TYPE">extension</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="tN~tZR6a8;[r$I_gf5wS">
+        <field name="TEXT">Define an asterisk context</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="9d|mJk$Gm8ewqSZ;OcWv">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+config+extensions.conf</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="y.Y](=Tbq;a]EuC4Vi;D">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="%6h%9I$Mn}uQQ?(]$ui%" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">background</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="GLR)hP_K2NlgqvBbU=9L">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="_yK0#P3VwYqddR]#s)=C">
+            <field name="TEXT">Background</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="}_H.}qSwro4rVG]U7[X{">
+            <field name="INPUTNAME">audioFiles</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="G6mkaZ#:_?$!S;2sDM,@">
+                <field name="TEXT">Audio Files</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <block type="type_string" id="^*`.zfbQJ:3eQ[bz[hw!"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="~9hj0e4lyo=l2Mr|RmJo">
+        <field name="TEXT">Play audio in the background</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="tDQc:WZ-y9LF?g5vfkUV">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+cmd+BackGround</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="{8G).L6.tuE9LGOkkXj@">
+        <mutation colour="#a5745b"></mutation>
+        <field name="HUE">20</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="4]m1%%!2!L-1n/=jS:Ab" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">playback</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="X2o{C^OlJS`~~RAM?x#j">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="jh}ic$nDVj9%Q+.Br$iT">
+            <field name="TEXT">Playback</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="qb;!p7ZOZ#l_kfut_x3t">
+            <field name="INPUTNAME">audioFiles</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="zFW@Hq~EQ6ZQFQV0s,=a">
+                <field name="TEXT">Audio Files</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <block type="type_string" id="H9yoJ|j`4#TI?t.mvsX7"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="J*jvVu,i%qEtQE$PXVWD">
+        <field name="TEXT">Play audio</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="+B35].^w+P,b!stU00x[">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+cmd+Playback</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="n3kTP9)XHtun/vXc#i8d">
+        <mutation colour="#a5745b"></mutation>
+        <field name="HUE">20</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="G4yHrR;Wj8,-h4DPyu5R" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">extensiontimeout</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="0e~Lr0}D()5)Vm]QlkFD">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="=D1#Ev}dH|aGBNFoO)x1">
+            <field name="TEXT">Timeout</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="/]%Lf7hxMaW({*Dz:}Bc">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_input" id=",b.o(/t)I??~csBqF,Y)">
+                <field name="TEXT">User Timed Out</field>
+                <field name="FIELDNAME">extensionDescription</field>
+              </block>
+            </statement>
+            <next>
+              <block type="input_statement" id="K~o+JgmNn-%Y$.LN1z5h">
+                <field name="INPUTNAME">commands</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="o]lL:oi~PZ9rmWskuV3H">
+                    <field name="TEXT">Commands</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="e1eu%]7#3vNT~Gc6_Xn{"></shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="1rXx/)zqNC$n#A,okLkV">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="$EzYut?C-9_E2KX2;*JK">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="^.0,`DpNcH-)W.Z}#m_c">
+        <mutation colour="#a0a55b"></mutation>
+        <field name="HUE">64</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="4;Vhgfn`gouMq5zl~UFk" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">extensionInvalid</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Qa[Mx(^?+A}7ry7Gi;bE">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id=")9[Cfz9KbSV%$__TZ8,a">
+            <field name="TEXT">Invalid</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="f8u,f8jSBT_,Xt=4oQ[:">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_input" id="Dksdu:uFd=OF:raX9S-S">
+                <field name="TEXT">User Entered Invalid Option</field>
+                <field name="FIELDNAME">extensionDescription</field>
+              </block>
+            </statement>
+            <next>
+              <block type="input_statement" id="9U,o8({pKzp}zOCTENyV">
+                <field name="INPUTNAME">commands</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="Qd#n}M23)QI{Xqr]8fbD">
+                    <field name="TEXT">Commands</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="=t[5t+WK1RZ7}#`2]jKz"></shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id=")V,|/cN?Vk4wRuJnroUZ">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="(k{6d_SJEQjuLuBy#=%F">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="wtd*_MIS8%8rqBv*{mh#"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="e^wHK/ZaP%V7eZ0y$OgA"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="W0Rg9GO[P.A~3UkXcYZb">
+        <mutation colour="#a0a55b"></mutation>
+        <field name="HUE">64</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="qROxp]Bq{@GXYVIy-tM}" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">extension</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="GTF#YZT`n_s09(bb1TGP">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="z.kFN,^$An#IR}H3ROkL">
+            <field name="TEXT">Extension</field>
+            <next>
+              <block type="field_input" id="~z[le,:@N-DFnqhA;hLc">
+                <field name="TEXT">Extension name</field>
+                <field name="FIELDNAME">extensionName</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="YeljrN7%v=`Xj]2YZNK^">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="oZLd;xLx{7-b(6XmXA:M">
+                <field name="TEXT">Description</field>
+                <next>
+                  <block type="field_input" id="|Mo~amt@$B@/Ad=6_D$^">
+                    <field name="TEXT">Extension Description</field>
+                    <field name="FIELDNAME">extensionDescription</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_statement" id="6r`6ph-1v9#87g9C}zOM">
+                <field name="INPUTNAME">commands</field>
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="h,Ff9?I?X;E:!#:i_}mP">
+                    <field name="TEXT">Commands</field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="aZw:q/,P%Ne,FpWgsHUP"></shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="C;7{a6GxC8Pf^qhq1*Oo">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="i.J4BA^M`}C?{v:7S6s#">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="!1m40ApgpgS]r7K,AOJ0">
+        <mutation colour="#a0a55b"></mutation>
+        <field name="HUE">64</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="6M_L~iC)FU,+BUQ8J7_:" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">goto</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="nA)k4uWa)-K;#uvE]a5C">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="OowI1%ET?G5PWfVnA{%Q">
+            <field name="TEXT">Go To</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="5`G|MIzZyO[.tN9%a}fO">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="X]2e6dF;`[;O?%8mLta{">
+                <field name="TEXT">Context</field>
+                <next>
+                  <block type="field_input" id="GPWd-;iv$K7lGo8r-]ep">
+                    <field name="TEXT"></field>
+                    <field name="FIELDNAME">context</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_dummy" id="UU/Rw1oI2~gIlLbe0,W5">
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="2gTkDYwocG`Sxrr!y6(Q">
+                    <field name="TEXT">Extension</field>
+                    <next>
+                      <block type="field_input" id="NGjbw:(!YcLc6{76|/f1">
+                        <field name="TEXT"></field>
+                        <field name="FIELDNAME">extension</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="input_dummy" id="[P9CXh=3~WtiFY`ucpY7">
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id="+NizmhXD*z$l7o]tJ_WB">
+                        <field name="TEXT">Priority</field>
+                        <next>
+                          <block type="field_input" id="JmJBWE:0l!$I5kh--cyr">
+                            <field name="TEXT"></field>
+                            <field name="FIELDNAME">priority</field>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="Jq$8|-u.s}]xB*!W7:(A">
+        <field name="TEXT">Go To</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gIayk_I.r*rP#gn.0Ve*">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+cmd+Goto</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="C8JEk+?D2}]G]?svsiBC">
+        <mutation colour="#5ba55b"></mutation>
+        <field name="HUE">120</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="s/#1T*hUgvk6SPYnTNmQ" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">gotoif</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="3cn[8#dbQIe{s(M*^7@t">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="s}yAJh+2(xP~`x4/d.u(">
+            <field name="TEXT">Go To If</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="Nvn,F]W-^.?TqP!H%3zt">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="ipsUII`!sadRhg)9(b4J">
+                <field name="TEXT">Condition</field>
+                <next>
+                  <block type="field_input" id="m17*.`t,G*St?5,N@rsc">
+                    <field name="TEXT"></field>
+                    <field name="FIELDNAME">condition</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_dummy" id="jo!+,r(:3=85OPl+XEUq">
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="M$jW17,O@!;$3uKouUq6">
+                    <field name="TEXT">Context</field>
+                    <next>
+                      <block type="field_input" id="]@BlCe21vD/$*4,2U_`R">
+                        <field name="TEXT"></field>
+                        <field name="FIELDNAME">context</field>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="input_dummy" id="CM@TrLC_ysdLKjf1$_$p">
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id="T~|6wh:r+Dl8vlA[A$Px">
+                        <field name="TEXT">Extension</field>
+                        <next>
+                          <block type="field_input" id="7Qwg(S~~W3O?{ESnp_e4">
+                            <field name="TEXT"></field>
+                            <field name="FIELDNAME">extension</field>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="input_dummy" id="X9~N*[WJffv@1#Q).SYG">
+                        <field name="ALIGN">LEFT</field>
+                        <statement name="FIELDS">
+                          <block type="field_static" id="T}*d%hO=!Eq{TmAaX^X9">
+                            <field name="TEXT">Priority</field>
+                            <next>
+                              <block type="field_input" id="{PS,Y~df]?!/rK/2`I/2">
+                                <field name="TEXT"></field>
+                                <field name="FIELDNAME">priority</field>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="~al1{+kHjB]iUSdZ{qxT">
+        <field name="TEXT">Conditional Goto</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="XLJ/E%R4lCIg!n#c4x2@">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+cmd+Goto</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="6Byme5A4_UNKmGV[wo=a">
+        <mutation colour="#5ba55b"></mutation>
+        <field name="HUE">120</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="`cb*qxjI6jIQ!{u$:[Te" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">answer</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="!FrrWz*?Cr^H_++cx,Z[">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="IHLrw-hcur:2G8bI^3zI">
+            <field name="TEXT">Answer</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="wL97TO}r$W-4pC;eK.!_">
+        <field name="TEXT">Answer Ringing Line</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="VXuQ(G13VmZ#s#4)}w+u">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+cmd+Answer</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="#ZKDy66+Sck=dB7wmL1{">
+        <mutation colour="#5ba58b"></mutation>
+        <field name="HUE">159</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="HUbLy:{n@ty=^X9Of!)^" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">hangup</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="M/,WaSdS?uW{(xps%~wo">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="!bEs+//?u8it%~C;3022">
+            <field name="TEXT">Hangup</field>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="{k^-8V-z`v4udc6pFJl6">
+        <field name="TEXT">Unconditional Hangup</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="qY`OTJB/9(r@EkZxp_%|">
+        <field name="TEXT">https://www.voip-info.org/wiki/view/Asterisk+cmd+Hangup</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="o|@m`wyIsJt_HR=/;wb.">
+        <mutation colour="#5ba58b"></mutation>
+        <field name="HUE">159</field>
+      </block>
+    </value>
+  </block></xml>
